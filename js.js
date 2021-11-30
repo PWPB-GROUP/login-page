@@ -1,10 +1,11 @@
-
 let loginListen = function(){
     let user = document.getElementById("username").value;
     let pass = document.getElementById("password").value;
-    if(user === "admin" && pass === "admin"){
+    if(user === "" || pass === ""){
+        alert("User atau Password Kosong");
+    }else if(user === "admin" && pass === "admin"){
         alert("User dan Password Valid");
     }else{
-        alert("Password Salah");
+        alert("User atau Password Salah");
     }
 }
